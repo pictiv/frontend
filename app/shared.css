@@ -1,0 +1,31 @@
+hanko-auth::part(container) {
+  background-color: var(--joy-palette-common-black, #000);
+  border-radius: 12px;
+}
+
+hanko-auth::part(headline1) {
+  color: var(--joy-palette-neutral-100, #F0F4F8);
+}
+hanko-auth::part(paragraph) {
+  color: var(--joy-palette-neutral-100, #F0F4F8);
+}
+
+hanko-auth::part(divider-text) {
+  background-color: var(--joy-palette-common-black, #000);
+  color: var(--joy-palette-neutral-400, #9FA6AD);
+}
+
+hanko-auth::part(divider-line)  {
+  color: rgba(var(--joy-palette-neutral-mainChannel, 99 107 116) / 0.3)
+}
+
+hanko-auth::part(primary-button) {
+  background-color: var(--joy-palette-primary-500, #0B6BCB);
+  border-color: var(--joy-palette-primary-500, #0B6BCB);
+  color: var(--joy-palette-common-white, #FFF);
+}
+hanko-auth::part(primary-button):hover {
+  background-color: var(--joy-palette-primary-600, #185EA5);
+  border-color: var(--joy-palette-primary-600, #185EA5);
+  color: var(--joy-palette-common-white, #FFF);
+}

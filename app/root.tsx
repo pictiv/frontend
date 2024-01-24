@@ -9,12 +9,12 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import '@fontsource/inter/index.css'
+import "@fontsource/inter/index.css";
 
 export const links: LinksFunction = () => {
   return [
     ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-  ]
+  ];
 };
 
 export default function App() {

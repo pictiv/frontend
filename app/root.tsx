@@ -10,6 +10,7 @@ import {
 } from "@remix-run/react";
 
 import "@fontsource/inter/index.css";
+import { CssVarsProvider } from "@mui/joy";
 
 export const links: LinksFunction = () => {
   return [
@@ -27,7 +28,9 @@ export default function App() {
         <Links />
       </head>
       <body style={{ fontFamily: "Inter" }}>
-        <Outlet />
+        <CssVarsProvider defaultMode="dark" disableTransitionOnChange>
+          <Outlet />
+        </CssVarsProvider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

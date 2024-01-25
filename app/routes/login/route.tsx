@@ -1,13 +1,13 @@
 import {
   Box,
   CssBaseline,
-  CssVarsProvider,
   GlobalStyles,
   IconButton,
   Stack,
   Typography,
   SvgIcon,
   formLabelClasses,
+  Sheet,
 } from "@mui/joy";
 import { useNavigate, useLoaderData, MetaFunction } from "@remix-run/react";
 import { Suspense, useCallback, useEffect, useState } from "react";
@@ -22,7 +22,7 @@ export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 export const meta: MetaFunction = () => {
   return [
     { title: Title("Account") },
-    { name: "description", content: "Welcome to Remix!" },
+    { name: "description", content: "Welcome to Pictiv!" },
   ];
 };
 
@@ -72,7 +72,7 @@ const HankoAuth = () => {
 
 const Login = () => {
   return (
-    <CssVarsProvider defaultMode="dark" disableTransitionOnChange>
+    <>
       <CssBaseline />
       <GlobalStyles
         styles={{
@@ -160,7 +160,9 @@ const Login = () => {
             }}
           >
             <Stack gap={4} sx={{ mt: 2 }}>
-              <HankoAuth />
+              <Sheet variant="outlined" sx={{ borderRadius: "sm" }}>
+                <HankoAuth />
+              </Sheet>
             </Stack>
           </Box>
           <Box component="footer" sx={{ py: 3 }}>
@@ -188,7 +190,7 @@ const Login = () => {
           backgroundImage: "url(./back.jpg)",
         }}
       />
-    </CssVarsProvider>
+    </>
   );
 };
 

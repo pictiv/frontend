@@ -11,7 +11,7 @@ import {
   Anchor,
   BackgroundImage,
   Center,
-  Container,
+  Card,
 } from "@mantine/core";
 
 import styles2 from "~/routes/login/login.module.css";
@@ -74,7 +74,7 @@ const HankoAuth = () => {
 const Login = () => {
   return (
     <>
-      <BackgroundImage style={{ height: "100vh" }} src="./backdrop.jpg">
+      <BackgroundImage style={{ height: "full" }} src="./backdrop.jpg">
         <div
           style={{
             display: "flex",
@@ -91,10 +91,16 @@ const Login = () => {
             px={20}
           >
             <Center style={{ height: "100vh" }}>
-              <Container>
+              <Card
+                style={{
+                  backgroundColor: "var(--mantine-color-body)",
+                  borderRadius: "12px",
+                  padding: "0",
+                }}
+              >
                 <HankoAuth />
 
-                <Text ta="center">
+                <Text ta="center" mb={25}>
                   By creating an account, <br /> you agree to our{" "}
                   <Anchor<"a">
                     href="#"
@@ -113,7 +119,7 @@ const Login = () => {
                   </Anchor>
                   .
                 </Text>
-              </Container>
+              </Card>
             </Center>
           </Paper>
         </div>

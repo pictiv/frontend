@@ -5,5 +5,13 @@
   @media screen and  (max-width: 62em) {
     width: 100%;
     max-width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
   }
 }
+
+/* .backdrop {
+  @media screen and (max-width: 62em) {
+    
+  }
+} */

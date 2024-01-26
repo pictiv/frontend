@@ -1,31 +1,50 @@
 hanko-auth::part(container) {
-  background-color: var(--joy-palette-common-black, #000);
-  border-radius: 12px;
+  background-color: var(--mantine-color-body);
 }
 
-hanko-auth::part(headline1) {
-  color: var(--joy-palette-neutral-100, #F0F4F8);
+[data-mantine-color-scheme=light]hanko-auth::part(headline1) {
+  color: var(--mantine-color-black);
 }
-hanko-auth::part(paragraph) {
-  color: var(--joy-palette-neutral-100, #F0F4F8);
+[data-mantine-color-scheme=dark]hanko-auth::part(headline1) {
+  color: var(--mantine-color-white);
+}
+
+[data-mantine-color-scheme=light]hanko-auth::part(headline2) {
+  color: var(--mantine-color-black);
+}
+[data-mantine-color-scheme=dark]hanko-auth::part(headline2) {
+  color: var(--mantine-color-white);
+}
+
+[data-mantine-color-scheme=light]hanko-auth::part(paragraph) {
+  color: var(--mantine-color-black);
+}
+[data-mantine-color-scheme=dark]hanko-auth::part(paragraph) {
+  color: var(--mantine-color-white);
 }
 
 hanko-auth::part(divider-text) {
-  background-color: var(--joy-palette-common-black, #000);
-  color: var(--joy-palette-neutral-400, #9FA6AD);
+  background-color: var(--mantine-color-body);
+  color: var(--divider-color,var(--mantine-color-dimmed));
 }
 
 hanko-auth::part(divider-line)  {
-  color: rgba(var(--joy-palette-neutral-mainChannel, 99 107 116) / 0.3)
+  color: var(--divider-color,var(--mantine-color-dimmed))
 }
 
 hanko-auth::part(primary-button) {
-  background-color: var(--joy-palette-primary-500, #0B6BCB);
-  border-color: var(--joy-palette-primary-500, #0B6BCB);
-  color: var(--joy-palette-common-white, #FFF);
+  background-color: var(--mantine-color-main-filled);
+  border-color: var(--mantine-color-main-filled);
+  color: var(--_button-color,var(--button-color,var(--mantine-color-white)));
+  font-weight: 550;
 }
+
 hanko-auth::part(primary-button):hover {
-  background-color: var(--joy-palette-primary-600, #185EA5);
-  border-color: var(--joy-palette-primary-600, #185EA5);
-  color: var(--joy-palette-common-white, #FFF);
+  background-color: var(--mantine-color-main-filled-hover);
+  border-color: var(--mantine-color-main-filled-hover);
+  color: var(--_button-color,var(--button-color,var(--mantine-color-white)));
+}
+
+hanko-auth::part(link) {
+  color: var(--mantine-color-dark-2);
 }

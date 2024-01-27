@@ -4,7 +4,7 @@ import { register, type Hanko } from "~/utils/hanko.client";
 import { TitleName } from "~/utils/title";
 
 import { LinksFunction } from "@remix-run/node";
-import styles1 from "~/shared.css";
+import hankocss from "~/shared.css";
 import {
   Paper,
   Text,
@@ -14,10 +14,10 @@ import {
   Card,
 } from "@mantine/core";
 
-import styles2 from "~/routes/login/login.module.css";
+import style from "~/routes/login/login.module.css";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles1 },
+  { rel: "stylesheet", href: hankocss },
 ];
 
 export const meta: MetaFunction = () => {
@@ -86,7 +86,7 @@ const Login = () => {
               borderLeft:
                 "1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-7))",
             }}
-            className={styles2.paper}
+            className={style.paper}
             radius={0}
             px={20}
           >

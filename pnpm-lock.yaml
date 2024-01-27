@@ -35,6 +35,9 @@ dependencies:
   '@remix-run/serve':
     specifier: ^2.5.1
     version: 2.5.1(typescript@5.3.3)
+  '@tabler/icons-react':
+    specifier: ^2.46.0
+    version: 2.46.0(react@18.2.0)
   '@teamhanko/hanko-elements':
     specifier: ^0.9.1
     version: 0.9.1
@@ -1507,6 +1510,20 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@tabler/icons-react@2.46.0(react@18.2.0):
+    resolution: {integrity: sha512-X8MRxuslIOFqMjAo+GvUZDpjlOwNYNJTuOsHXf/NBvVI6ygqUf0FUNsDLLA5fQ6k6KtRwxMlgGB+eR8ZG1UP0g==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@tabler/icons': 2.46.0
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
+  /@tabler/icons@2.46.0:
+    resolution: {integrity: sha512-Q5G8Pj5IO+Uhc6pszpu5/hGYY018JwEzzvmuqr+gKJtfIvAHA3umpwUilMRLEy89p+WCP+YsDhicMhfBCCv1qA==}
+    dev: false
 
   /@teamhanko/hanko-elements@0.9.1:
     resolution: {integrity: sha512-hPavD8IsJZ9EtXxfvinuFj0yc7whOdt6/7irZ2jcQRyYYLjNRZNxnKY3RQPd1eV9AurSjxCh1oq66/61sFGBaA==}

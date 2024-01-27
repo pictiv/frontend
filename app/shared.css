@@ -1,5 +1,6 @@
 hanko-auth::part(container) {
   background-color: var(--mantine-color-body);
+  padding: 60px 50px 60px 50px;
 }
 
 [data-mantine-color-scheme=light]hanko-auth::part(headline1) {
@@ -47,4 +48,21 @@ hanko-auth::part(primary-button):hover {
 
 hanko-auth::part(link) {
   color: var(--mantine-color-dark-2);
+}
+
+hanko-auth::part(error) {
+  background-color: var(--mantine-color-red-light);
+  border-color: var(--mantine-color-red-outline);
+  border: calc(0.0625rem * var(--mantine-scale)) solid transparent;
+}
+
+hanko-auth::part(error-text){
+  margin-left: 2px;
+}
+
+[data-mantine-color-scheme=light]hanko-auth::part(error-text) {
+  color: var(--mantine-color-black);
+}
+[data-mantine-color-scheme=dark]hanko-auth::part(error-text) {
+  color: var(--mantine-color-white);
 }

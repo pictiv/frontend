@@ -100,7 +100,7 @@ const Login = () => {
               >
                 <HankoAuth />
 
-                <Text ta="center" mb={25}>
+                <Text size="xs" ta="center" mb={25}>
                   By creating an account, <br /> you agree to our{" "}
                   <Anchor<"a">
                     href="#"
